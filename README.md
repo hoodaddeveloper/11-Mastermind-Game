@@ -1,2 +1,2 @@
 # Mastermind-game
-Mastermind is a puzzle game, in which one player tries to guess the code their opponent comes up with. Originally a board game, though with roots in earlier pen-and-paper games, but now my project is now available for public.
+My second JavaScript project is an interesting Game. Mastermind is a puzzle game, in which one player tries to guess the code their opponent comes up with. I made it in HTML/CSS, and JavaScript.
