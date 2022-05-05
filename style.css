@@ -1,0 +1,9 @@
+body {
+
+}
+
+.board {
+  background-color: red;
+  width: 30%;
+  height: 96vh;
+}
