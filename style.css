@@ -21,17 +21,43 @@ body {
 /*---- answer-container ----*/
 
 .answer-container {
-  
+  box-sizing: border-box;
+  width: 100%;
+  height: 10%;
+  border: 1px solid black;
+}
+
+.answer-box {
+  width: 70%;
+  height: 100%;
+  border: 1px solid red;
+}
+
+.btn-container {
+  width: 70%;
+  height: 100%;
+  background-color: grey;
+}
+
+.submit-btn {
+  width: 80%;
+  height: 80%;
 }
 
 /*---- guess-container ----*/
 
-.quess-container {
-  
+.guess-container {
+  box-sizing: border-box;
+  width: 100%;
+  height: 80%;
+  border: 1px solid black;
 }
 
 /*---- selection-container ----*/
 
 .selection-container {
-
+  box-sizing: border-box;
+  width: 100%;
+  height: 10%;
+  border: 1px solid black;
 }
