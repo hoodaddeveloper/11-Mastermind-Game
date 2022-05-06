@@ -1,9 +1,37 @@
 body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(rgb(165, 220, 246), rgb(2, 175, 2));
+}
 
+.flexer {
+  display: flex;
 }
 
 .board {
-  background-color: red;
   width: 30%;
+  min-width: 420px;
   height: 96vh;
+  margin: 2vh auto;
+  background: linear-gradient(rgb(197, 82, 82), rgb(88, 9, 9));
+  border-radius: 15px;
+  box-shadow: 5px 5px 20px 5px rgb(8, 7, 5);
+}
+
+/*---- answer-container ----*/
+
+.answer-container {
+  
+}
+
+/*---- guess-container ----*/
+
+.quess-container {
+  
+}
+
+/*---- selection-container ----*/
+
+.selection-container {
+
 }
