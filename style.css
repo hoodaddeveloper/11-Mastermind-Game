@@ -11,27 +11,27 @@ body {
 
 .board {
   width: 30%;
-  min-width: 420px;
   height: 96vh;
+  min-width: 420px;
   margin: 2vh auto;
-  background: linear-gradient(rgb(197, 82, 82), rgb(88, 9, 9));
   border-radius: 15px;
+  border: 5px groove #941b0b;
   box-shadow: 5px 5px 15px 5px rgb(8, 7, 5);
+  background: linear-gradient(rgb(197, 82, 82), rgb(88, 9, 9));
 }
 
 /*---- answer-container ----*/
 
 .answer-container {
-  width: 100%;
+  width: 99%;
   height: 11%;
-  border: 1px solid black;
   border-radius: 15px 15px 0 0;
 }
 
 .answer-box {
-  width: 70%;
+  width: 71%;
   height: 100%;
-  border-right: 1px solid black;
+  border-right: 5px groove #941b0b;
 }
 
 .answer {
@@ -40,10 +40,8 @@ body {
   margin: 0 auto;
   margin-top: 7px;
   border-radius: 15px;
-  border-right: 1px solid black;
-  border-left: 1px solid black;
-  box-shadow: inset 1px 1px 1px 2px;
-  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(249,140,4,1) 65%);
+  box-shadow: inset -1px -1px 1px 2px;
+  background: linear-gradient(rgb(197, 82, 82), rgb(88, 9, 9));
 }
 
 .btn-container {
@@ -54,11 +52,10 @@ body {
 .submit-btn {
   width: 80%;
   height: 80%;
-  margin: auto;
   cursor: pointer;
-  margin-top: 7px;
-  border-radius: 15px;
   text-align: center;
+  border-radius: 15px;
+  margin: 7px 0 0 16px;
   text-shadow: 1px 1px 2px black;
   box-shadow: inset -2px -2px 5px 2px;
   background-color: rgb(206, 205, 205);
@@ -71,8 +68,8 @@ body {
 
 .text {
   margin: 0 auto;
-  padding-top: 15px;
   font-size: 18px;
+  padding-top: 15px;
 }
 
 /*---- guess-container ----*/
@@ -80,49 +77,55 @@ body {
 .guess-container {
   width: 100%;
   height: 80%;
-  border-right: 1px solid black;
-  border-left: 1px solid black;
 }
 
 .guess-row {
-  height: 72px;
   width: 100%;
-  border-bottom: 1px solid black;
+  height: 74px;
 }
 
 .guess-pegs {
+  width: 69%;
   height: 90%;
-  width: 67%;
-  padding: 4px 8px;
-  border-right: 1px solid black;
+  padding: 4px 5px;
+  border-top: 5px groove #941b0b;
 }
 
 .guess-peg {
-  width: 20%;
-  height: 80%;
+  width: 19%;
+  height: 86%;
   border-radius: 50%;
-  border: 1px solid black;
-  margin: 5px 2px 0 10px;
+  margin-left: 12px;
+  background: (rgb(88, 9, 9));
+  box-shadow: inset 4px 4px 8px 2px;
+  border-right: 4px solid #941b0b;
+  border-bottom: 4px solid #941b0b;
 }
 
 .grade-pegs {
-  height: 90%;
   width: 30%;
+  height: 90%;
   flex-wrap: wrap;
+  border-top: 5px groove #941b0b;
+  border-left: 5px groove #941b0b;
 }
 
 .grade-peg {
   width: 20%;
   height: 40%;
-  margin: 5px 0 0 27px;
   border-radius: 50%;
-  border: 1px solid black;
+  margin: 3px 0 0 26px;
+  background: (rgb(88, 9, 9));
+  box-shadow: inset 2px 2px 5px 2px;
+  border-right: 3px solid #941b0b;
+  border-bottom: 3px solid #941b0b;
 }
 
 /*---- selection-container ----*/
 
 .selection-container {
   width: 100%;
-  height: 10%;
+  margin-top: 4px;
   border-radius: 0 0 15px 15px;
+  border-top: 5px groove #941b0b;
 }
