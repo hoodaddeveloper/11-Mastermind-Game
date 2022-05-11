@@ -92,19 +92,25 @@ body {
 }
 
 .guess-peg {
-  width: 19%;
-  height: 86%;
+  width: 20%;
+  height: 80%;
+  margin: 2px 0 0 10px;
   border-radius: 50%;
-  margin-left: 12px;
   background: (rgb(88, 9, 9));
   box-shadow: inset 4px 4px 8px 2px;
   border-right: 4px solid #941b0b;
   border-bottom: 4px solid #941b0b;
 }
 
+.guess-peg:hover {
+  cursor: pointer;
+  box-shadow: inset 4px 4px 8px 7px;
+  border-right: 4px solid #7c1609;
+  border-bottom: 4px solid #7c1609;
+}
+
 .grade-pegs {
   width: 30%;
-  height: 90%;
   flex-wrap: wrap;
   border-top: 5px groove #941b0b;
   border-left: 5px groove #941b0b;
@@ -112,9 +118,9 @@ body {
 
 .grade-peg {
   width: 20%;
-  height: 40%;
+  height: 35%;
   border-radius: 50%;
-  margin: 3px 0 0 26px;
+  margin: 4px 0 0 26px;
   background: (rgb(88, 9, 9));
   box-shadow: inset 2px 2px 5px 2px;
   border-right: 3px solid #941b0b;
@@ -125,7 +131,82 @@ body {
 
 .selection-container {
   width: 100%;
-  margin-top: 4px;
+  height: 10%;
+  margin-top: 5px;
   border-radius: 0 0 15px 15px;
   border-top: 5px groove #941b0b;
+}
+
+.selector-outer {
+  width: 12%;
+  height: 65%;
+  border-radius: 50%;
+  margin: 4px 0 0 16px;
+  background: (rgb(88, 9, 9));
+  box-shadow: inset 4px 4px 8px 2px;
+  border-right: 4px solid #941b0b;
+  border-bottom: 4px solid #941b0b;
+}
+
+.selector-outer:hover {
+  cursor: pointer;
+}
+
+.selector-inner {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  margin: 4px 0 0 5px;
+  background: (rgb(88, 9, 9));
+  box-shadow: inset 2px 2px 5px 2px;
+  border-right: 3px solid #941b0b;
+  border-bottom: 3px solid #941b0b;
+}
+
+.red {
+  background-color: red;
+}
+
+.red:hover {
+  background-color: darkred;
+}
+
+.green {
+  background-color: green;
+}
+
+.green:hover {
+  background-color: darkgreen;
+}
+
+.white {
+  background-color: white;
+}
+
+.white:hover {
+  background-color: gray;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.blue:hover {
+  background-color: darkblue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.yellow:hover {
+  background-color: rgb(118, 118, 11);
+}
+
+.black {
+  background-color: rgb(22, 21, 21);
+}
+
+.black:hover {
+  background-color: black;
 }
