@@ -104,6 +104,7 @@ body {
 
 .guess-peg:hover {
   cursor: pointer;
+  transition: 0.2s;
   box-shadow: inset 4px 4px 8px 7px;
   border-right: 4px solid #7c1609;
   border-bottom: 4px solid #7c1609;
@@ -168,6 +169,7 @@ body {
 }
 
 .red:hover {
+  transition: 0.2s;
   background-color: darkred;
 }
 
@@ -176,6 +178,7 @@ body {
 }
 
 .green:hover {
+  transition: 0.2s;
   background-color: darkgreen;
 }
 
@@ -184,6 +187,7 @@ body {
 }
 
 .white:hover {
+  transition: 0.2s;
   background-color: gray;
 }
 
@@ -192,6 +196,7 @@ body {
 }
 
 .blue:hover {
+  transition: 0.2s;
   background-color: darkblue;
 }
 
@@ -200,6 +205,7 @@ body {
 }
 
 .yellow:hover {
+  transition: 0.2s;
   background-color: rgb(118, 118, 11);
 }
 
@@ -208,5 +214,6 @@ body {
 }
 
 .black:hover {
+  transition: 0.2s;
   background-color: black;
 }
