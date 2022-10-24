@@ -14,9 +14,9 @@ $(document).ready(function() {
     guessBoxArray.push(tempRay[i]);
   }
 
-  for(let i = 0; i < 10; i++) {
+  for (let i = 0; i < 10; i++) {
     let guessArray = guessBoxArray[i].getElementsByClassName("guess-peg");
-    for(let j = 0; j < 4; j++) {
+    for (let j = 0; j < 4; j++) {
       $(guessArray[j]).attr('id',`g-${i}-${j}`);
     }
   }
@@ -39,7 +39,7 @@ $(document).ready(function() {
     let gradeBox = getGradeBox();
     placePegs(gradeRay, gradeBox);
     guess++;
-    for(let i = 0; i < 4; i++) {
+    for (let i = 0; i < 4; i++) {
       $(`#g-${guess}-${i}`).addClass('active');
     }
     $('.submit-btn').hide();
@@ -57,14 +57,14 @@ $(document).ready(function() {
     if(isSelected) {
       if ($(this).hasClass('active')) {
         let number = parseInt($(this).css('border'));
-        if(number === 1) { //insert peg
+        if (number === 1) { //insert peg
         $(this).css('background', 'none');
         $(this).css('background-color', selectedColor);
         $(this).css('border', '2px solid white');
         let coord = $(this).attr('id');
         updateMasterArray(selectedColor, coord);
         clickCount++;
-        if(clickCount === 4) {
+        if (clickCount === 4) {
             $('.submit-btn').show();
             clickCount = 0;
         }
@@ -80,7 +80,7 @@ $(document).ready(function() {
 
   function makeAnswer() {
     let ray = [];
-    for(let i = 0; i < 4; i++) {
+    for (let i = 0; i < 4; i++) {
       ray.push(Math.floor(Math.random() * 6));
     }
     return ray;
