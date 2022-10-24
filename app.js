@@ -10,7 +10,7 @@ $(document).ready(function() {
   let tempRay = $('.guess-pegs');
   let guessBoxArray = [];
   let nextGrade = $($('.first-grade')[0]).parent()[0];
-  for(let i = 9; i >= 0; i-- ) {
+  for (let i = 9; i >= 0; i-- ) {
     guessBoxArray.push(tempRay[i]);
   }
 
@@ -54,7 +54,7 @@ $(document).ready(function() {
   });
 
   $('.guess-peg').click(function() {
-    if(isSelected) {
+    if (isSelected) {
       if ($(this).hasClass('active')) {
         let number = parseInt($(this).css('border'));
         if (number === 1) { //insert peg
@@ -65,8 +65,8 @@ $(document).ready(function() {
         updateMasterArray(selectedColor, coord);
         clickCount++;
         if (clickCount === 4) {
-            $('.submit-btn').show();
-            clickCount = 0;
+           $('.submit-btn').show();
+           clickCount = 0;
         }
       } else { //peg removed
           $(this).css('background', bGround);
@@ -107,7 +107,8 @@ $(document).ready(function() {
     let aRay = [];
     for (let i = 0; i < 4; i++) {
       aRay.push(answerRay[i]);
-    }
+   }
+    
     // Black Peg Check
     for (let i = 0; i < 4; i++) {
       if (masterGuessArray[guess][i] === aRay[i]) {
@@ -116,6 +117,7 @@ $(document).ready(function() {
         masterGuessArray[guess][i] = -2;
       }
     }
+    
     // White Peg Check
     for (let i = 0; i < 4; i++) {
       for (let j = 0; j < 4; j++) {
