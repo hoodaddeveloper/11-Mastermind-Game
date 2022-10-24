@@ -94,32 +94,32 @@ $(document).ready(function() {
   }
 
   function makeColorANumber(col) {
-    if(col === 'rgb(255, 0, 0)') return 0;
-    if(col === 'rgb(0, 128, 0)') return 1;
-    if(col === 'rgb(255, 255, 0)') return 2;
-    if(col === 'rgb(0, 0, 0)') return 3;
-    if(col === 'rgb(255, 255, 255)') return 4;
-    if(col === 'rgb(165, 42, 42)') return 5;
+    if (col === 'rgb(255, 0, 0)') return 0;
+    if (col === 'rgb(0, 128, 0)') return 1;
+    if (col === 'rgb(255, 255, 0)') return 2;
+    if (col === 'rgb(0, 0, 0)') return 3;
+    if (col === 'rgb(255, 255, 255)') return 4;
+    if (col === 'rgb(165, 42, 42)') return 5;
   }
 
   function getGrade() {
     let gradRay = [];
     let aRay = [];
-    for(let i = 0; i < 4; i++) {
+    for (let i = 0; i < 4; i++) {
       aRay.push(answerRay[i]);
     }
     // Black Peg Check
-    for(let i = 0; i < 4; i++) {
-      if(masterGuessArray[guess][i] === aRay[i]) {
+    for (let i = 0; i < 4; i++) {
+      if (masterGuessArray[guess][i] === aRay[i]) {
         gradRay.push('black-peg');
         aRay[i] = -1;
         masterGuessArray[guess][i] = -2;
       }
     }
     // White Peg Check
-    for(let i = 0; i < 4; i++) {
-      for(let j = 0; j < 4; j++) {
-        if(masterGuessArray[guess][i] === aRay[j]) {
+    for (let i = 0; i < 4; i++) {
+      for (let j = 0; j < 4; j++) {
+        if (masterGuessArray[guess][i] === aRay[j]) {
           gradRay.push('white-peg');
           aRay[j] = -1;
           masterGuessArray[guess][i] = -2;
@@ -137,18 +137,18 @@ $(document).ready(function() {
 
   function placePegs(ray, box) {
     let pegRay = box.getElementsByClassName("grade-peg");
-    for(let i = 0; i < ray.length; i++) {
+    for (let i = 0; i < ray.length; i++) {
       $(pegRay[i]).addClass(`${ray[i]}`);
     }
+    
     $('.white-peg').css('background', 'none').css('background-color', 'white');
     $('.black-peg').css('background', 'none').css('background-color', 'black');
   }
 
   function checkWin(ray) {
     let rayStr = ray.join();
-    if(rayStr === "black-peg,black-peg,black-peg,black-peg") {
+    if (rayStr === "black-peg,black-peg,black-peg,black-peg") {
       $('.modal').fadeIn(200);
     }
   }
-
 });
