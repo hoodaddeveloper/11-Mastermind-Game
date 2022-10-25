@@ -1,2 +1,2 @@
 # Mastermind-Game
-My second JavaScript Project is an interesting Game. The Mastermind is a Puzzle Game, in which one Player tries to guess the code their opponent comes up with. I made it in HTML/CSS, JavaScript and jQuery.
+My second JavaScript Project is an interesting Game. The Mastermind is a puzzle Game, in which one Player tries to guess the code their opponent comes up with. I made it with HTML/CSS, JavaScript and jQuery.
