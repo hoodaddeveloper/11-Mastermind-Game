@@ -109,27 +109,27 @@ $(document).ready(function() {
       aRay.push(answerRay[i]);
    }
     
-    // Black Peg Check
-    for (let i = 0; i < 4; i++) {
-      if (masterGuessArray[guess][i] === aRay[i]) {
-        gradRay.push('black-peg');
-        aRay[i] = -1;
+  // Black Peg Check
+  for (let i = 0; i < 4; i++) {
+    if (masterGuessArray[guess][i] === aRay[i]) {
+      gradRay.push('black-peg');
+      aRay[i] = -1;
+      masterGuessArray[guess][i] = -2;
+    }
+  }
+    
+  // White Peg Check
+  for (let i = 0; i < 4; i++) {
+    for (let j = 0; j < 4; j++) {
+      if (masterGuessArray[guess][i] === aRay[j]) {
+        gradRay.push('white-peg');
+        aRay[j] = -1;
         masterGuessArray[guess][i] = -2;
       }
     }
-    
-    // White Peg Check
-    for (let i = 0; i < 4; i++) {
-      for (let j = 0; j < 4; j++) {
-        if (masterGuessArray[guess][i] === aRay[j]) {
-          gradRay.push('white-peg');
-          aRay[j] = -1;
-          masterGuessArray[guess][i] = -2;
-        }
-      }
-    }
-    return gradRay;
   }
+  return gradRay;
+}
 
   function getGradeBox() {
     let activeGrade =  nextGrade.getElementsByClassName("grade-pegs")[0];
